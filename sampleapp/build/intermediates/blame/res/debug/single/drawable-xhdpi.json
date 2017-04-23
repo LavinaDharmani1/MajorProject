@@ -76,12 +76,12 @@
         "source": "C:\\Users\\welcome\\.android\\build-cache\\a0a61d1c9f30498b136b6f5def2d21b101c33889\\output\\res\\drawable-xhdpi\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_moreoverflow_normal_holo_light.png",
-        "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\drawable-xhdpi\\abc_ic_menu_moreoverflow_normal_holo_light.png"
-    },
-    {
         "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_clear_search_api_disabled_holo_light.png",
         "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\drawable-xhdpi\\abc_ic_clear_search_api_disabled_holo_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_moreoverflow_normal_holo_light.png",
+        "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\drawable-xhdpi\\abc_ic_menu_moreoverflow_normal_holo_light.png"
     },
     {
         "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_go_search_api_holo_light.png",

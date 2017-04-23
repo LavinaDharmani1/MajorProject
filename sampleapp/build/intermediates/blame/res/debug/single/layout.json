@@ -8,12 +8,12 @@
         "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\layout\\abc_action_bar_decor_include.xml"
     },
     {
-        "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_home.xml",
-        "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\layout\\abc_action_bar_home.xml"
-    },
-    {
         "merged": "C:\\Users\\welcome\\Documents\\GitHub\\MajorProject_up\\sampleapp\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
         "source": "C:\\Users\\welcome\\.android\\build-cache\\a0a61d1c9f30498b136b6f5def2d21b101c33889\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_home.xml",
+        "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\layout\\abc_action_bar_home.xml"
     },
     {
         "merged": "C:\\Users\\welcome\\Documents\\GitHub\\MajorProject_up\\sampleapp\\build\\intermediates\\res\\merged\\debug\\layout\\activity_deeplink.xml",
@@ -24,12 +24,12 @@
         "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\layout\\abc_simple_decor.xml"
     },
     {
-        "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\layout\\abc_action_mode_bar.xml"
-    },
-    {
         "merged": "C:\\Users\\welcome\\Documents\\GitHub\\MajorProject_up\\sampleapp\\build\\intermediates\\res\\merged\\debug\\layout\\abc_simple_decor.xml",
         "source": "C:\\Users\\welcome\\.android\\build-cache\\a0a61d1c9f30498b136b6f5def2d21b101c33889\\output\\res\\layout\\abc_simple_decor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
         "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
