@@ -41,10 +41,10 @@ public class FirebaseDatabaseDemo extends AppCompatActivity implements GoogleApi
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
+                case R.id.navigation_feedback:
 
                     return true;
-                case R.id.navigation_dashboard:
+                case R.id.navigation_sharewith:
                     ShareIntentBuilder.from(FirebaseDatabaseDemo.this)
                             .text("Sharing is caring!")
                             .subject("Very important message")
@@ -52,7 +52,7 @@ public class FirebaseDatabaseDemo extends AppCompatActivity implements GoogleApi
                             .cc("carebear@example.com")
                             .share();
                     return true;
-                case R.id.navigation_notifications:
+                case R.id.navigation_appinvite:
                     sendInvitation();
                     return true;
             }

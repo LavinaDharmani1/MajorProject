@@ -9,8 +9,10 @@ import android.view.View;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ProgressBar;
 
 public class GoogleActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,7 @@ public class GoogleActivity extends AppCompatActivity {
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         WebView wvGo=(WebView) findViewById(R.id.wvGo);
         wvGo.getSettings().setJavaScriptEnabled(true);
