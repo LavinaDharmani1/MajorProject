@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/goldwallpaper"
+    android:background="@drawable/e5c9ce8ae21ac08ec60ae5a873680754"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="trainedge.majorproject.HomeActivity"
     tools:showIn="@layout/app_bar_home">
