@@ -121,9 +121,9 @@
             android:text="What would you like to share with us ?"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:layout_marginTop="27dp"
             android:layout_below="@+id/rate1"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="33dp" />
+            android:layout_toStartOf="@+id/rate5" />
 
         <TextView
             android:id="@+id/line1"
@@ -149,9 +149,9 @@
             android:paddingTop="5dp"
             android:textColor="@color/cardview_dark_background"
             android:textSize="14sp"
-            android:layout_marginTop="23dp"
+            android:layout_marginTop="13dp"
             android:layout_below="@+id/line1"
-            android:layout_centerHorizontal="true" />
+            android:layout_alignStart="@+id/textView5" />
 
         <TextView
             android:id="@+id/textView8"
@@ -160,9 +160,9 @@
             android:text="Please enter your email address."
             android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_marginTop="33dp"
+            android:layout_marginTop="17dp"
             android:layout_below="@+id/user_mess"
-            android:layout_alignParentStart="true" />
+            android:layout_alignStart="@+id/user_mess" />
 
         <TextView
             android:id="@+id/line2"
@@ -187,21 +187,21 @@
             android:paddingRight="5dp"
             android:textColor="@color/cardview_dark_background"
             android:textSize="14sp"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="17dp"
             android:layout_below="@+id/line2"
-            android:layout_alignStart="@+id/user_mess" />
+            android:layout_centerHorizontal="true" />
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/user_email"
-            android:layout_below="@+id/user_email"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="11dp"
             android:clickable="true"
             app:elevation="4dp"
             app:fabSize="normal"
-            app:srcCompat="@drawable/ic_send_black_60dp" />
+            app:srcCompat="@drawable/ic_send_black_60dp"
+            android:layout_below="@+id/user_email"
+            android:layout_alignEnd="@+id/user_email" />
 
     </RelativeLayout>
 
