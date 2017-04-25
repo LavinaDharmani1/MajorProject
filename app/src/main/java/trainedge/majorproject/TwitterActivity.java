@@ -16,6 +16,11 @@ public class TwitterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_twitter);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         WebView wvTwitter=(WebView) findViewById(R.id.wvTwitter);
         wvTwitter.getSettings().setJavaScriptEnabled(true);
