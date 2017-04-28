@@ -117,6 +117,14 @@ public class HomeActivity extends AppCompatActivity
             Intent gotoFlickrActivity = new Intent(HomeActivity.this, FlickrActivity.class);
             startActivity(gotoFlickrActivity);
 
+        } else if (id == R.id.nav_quora) {
+            Intent gotoQuoraActivity = new Intent(HomeActivity.this, QuoraActivity.class);
+            startActivity(gotoQuoraActivity);
+
+        } else if (id == R.id.nav_tagged) {
+            Intent gotoTaggedActivity = new Intent(HomeActivity.this, TaggedActivity.class);
+            startActivity(gotoTaggedActivity);
+
         } else if (id == R.id.btnLogout) {
             Intent gotoLogoutActivity = new Intent(HomeActivity.this, LogoutActivity.class);
             startActivity(gotoLogoutActivity);

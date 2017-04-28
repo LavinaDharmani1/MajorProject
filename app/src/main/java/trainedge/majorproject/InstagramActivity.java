@@ -19,7 +19,7 @@ public class InstagramActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         WebView wvInstagram = (WebView) findViewById(R.id.wvInstagram);

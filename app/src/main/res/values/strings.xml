@@ -33,4 +33,6 @@
     <string name="invitation_message">Install our app to get amazing life</string>
     <string name="invitation_cta">Install App</string>
     <string name="title_activity_logout">LogoutActivity</string>
+    <string name="title_activity_quora">QuoraActivity</string>
+    <string name="title_activity_tagged">TaggedActivity</string>
 </resources>

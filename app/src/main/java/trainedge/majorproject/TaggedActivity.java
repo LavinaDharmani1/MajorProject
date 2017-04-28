@@ -10,25 +10,24 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class TumblrActivity extends AppCompatActivity {
+public class TaggedActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tumblr);
+        setContentView(R.layout.activity_tagged);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        WebView wvTumblr = (WebView) findViewById(R.id.wvTumblr);
-        wvTumblr.getSettings().setJavaScriptEnabled(true);
-        wvTumblr.loadUrl("https://www.tumblr.com");
-        wvTumblr.setWebViewClient(new TumblrCallback());
+        WebView wvTagged = (WebView) findViewById(R.id.wvTagged);
+        wvTagged.getSettings().setJavaScriptEnabled(true);
+        wvTagged.loadUrl("https://m.tagged.com");
+        wvTagged.setWebViewClient(new TaggedCallback());
     }
 
-    private class TumblrCallback extends WebViewClient {
+    private class TaggedCallback extends WebViewClient {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
             return false;

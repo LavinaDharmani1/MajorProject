@@ -38,6 +38,15 @@
             android:id="@+id/nav_flickr"
             android:icon="@drawable/flickr50"
             android:title="Flickr" />
+        <item
+            android:id="@+id/nav_quora"
+            android:icon="@drawable/quora"
+            android:title="Qoura" />
+
+        <item
+            android:id="@+id/nav_tagged"
+            android:icon="@drawable/tagged"
+            android:title="Tagged" />
 
         <item
             android:id="@+id/btnLogout"
