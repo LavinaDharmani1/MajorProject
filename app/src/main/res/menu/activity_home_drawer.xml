@@ -45,7 +45,7 @@
 
         <item
             android:id="@+id/nav_tagged"
-            android:icon="@drawable/tagged"
+            android:icon="@drawable/tagged1"
             android:title="Tagged" />
 
         <item
