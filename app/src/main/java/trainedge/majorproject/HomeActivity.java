@@ -125,6 +125,14 @@ public class HomeActivity extends AppCompatActivity
             Intent gotoTaggedActivity = new Intent(HomeActivity.this, TaggedActivity.class);
             startActivity(gotoTaggedActivity);
 
+        } else if (id == R.id.nav_reddit) {
+            Intent gotoRedditActivity = new Intent(HomeActivity.this, RedditActivity.class);
+            startActivity(gotoRedditActivity);
+
+        } else if (id == R.id.nav_hi5) {
+            Intent gotoHi5Activity = new Intent(HomeActivity.this, Hi5Activity.class);
+            startActivity(gotoHi5Activity);
+
         } else if (id == R.id.btnLogout) {
             Intent gotoLogoutActivity = new Intent(HomeActivity.this, LogoutActivity.class);
             startActivity(gotoLogoutActivity);

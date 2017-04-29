@@ -35,4 +35,6 @@
     <string name="title_activity_logout">LogoutActivity</string>
     <string name="title_activity_quora">QuoraActivity</string>
     <string name="title_activity_tagged">TaggedActivity</string>
+    <string name="title_activity_reddit">RedditActivity</string>
+    <string name="title_activity_hi5">Hi5Activity</string>
 </resources>

@@ -199,7 +199,7 @@
             android:name=".TaggedActivity"
             android:label="@string/title_activity_tagged"
             android:parentActivityName=".HomeActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
@@ -215,7 +215,25 @@
             android:name="android.support.PARENT_ACTIVITY"
             android:value="trainedge.majorproject.HomeActivity" />
 
+        <activity
+            android:name=".RedditActivity"
+            android:label="@string/title_activity_reddit"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
 
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="trainedge.majorproject.HomeActivity" />
+
+        <activity
+            android:name=".Hi5Activity"
+            android:label="@string/title_activity_hi5"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="trainedge.majorproject.HomeActivity" />
     </application>
 
 </manifest>
