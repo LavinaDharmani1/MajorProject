@@ -68,6 +68,11 @@
             android:title="Askfm" />
 
         <item
+            android:id="@+id/nav_mylife"
+            android:icon="@drawable/askfm50"
+            android:title="MyLife" />
+
+        <item
             android:id="@+id/btnLogout"
             android:icon="@drawable/ic_power_settings_new_black_24dp"
             android:title="Logout" />

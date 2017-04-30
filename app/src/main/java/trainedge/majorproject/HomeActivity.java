@@ -141,6 +141,9 @@ public class HomeActivity extends AppCompatActivity
             Intent gotoAskfmActivity = new Intent(HomeActivity.this, AskfmActivity.class);
             startActivity(gotoAskfmActivity);
 
+        } else if (id == R.id.nav_mylife) {
+            Intent gotoMyLifeActivity = new Intent(HomeActivity.this, MyLifeActivity.class);
+            startActivity(gotoMyLifeActivity);
         } else if (id == R.id.btnLogout) {
             Intent gotoLogoutActivity = new Intent(HomeActivity.this, LogoutActivity.class);
             startActivity(gotoLogoutActivity);

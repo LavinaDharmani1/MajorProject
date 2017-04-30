@@ -249,6 +249,16 @@
             android:name=".AskfmActivity"
             android:label="@string/title_activity_askfm"
             android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="trainedge.majorproject.HomeActivity" />
+
+        <activity
+            android:name=".MyLifeActivity"
+            android:label="@string/title_activity_my_life"
+            android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <meta-data

@@ -39,4 +39,5 @@
     <string name="title_activity_hi5">Hi5Activity</string>
     <string name="title_activity_badoo">BadooActivity</string>
     <string name="title_activity_askfm">AskfmActivity</string>
+    <string name="title_activity_my_life">MyLifeActivity</string>
 </resources>
