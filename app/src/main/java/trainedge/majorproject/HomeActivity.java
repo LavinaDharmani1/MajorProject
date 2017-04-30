@@ -133,6 +133,14 @@ public class HomeActivity extends AppCompatActivity
             Intent gotoHi5Activity = new Intent(HomeActivity.this, Hi5Activity.class);
             startActivity(gotoHi5Activity);
 
+        } else if (id == R.id.nav_badoo) {
+            Intent gotoBadooActivity = new Intent(HomeActivity.this, BadooActivity.class);
+            startActivity(gotoBadooActivity);
+
+        } else if (id == R.id.nav_askfm) {
+            Intent gotoAskfmActivity = new Intent(HomeActivity.this, AskfmActivity.class);
+            startActivity(gotoAskfmActivity);
+
         } else if (id == R.id.btnLogout) {
             Intent gotoLogoutActivity = new Intent(HomeActivity.this, LogoutActivity.class);
             startActivity(gotoLogoutActivity);

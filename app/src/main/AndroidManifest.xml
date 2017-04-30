@@ -229,6 +229,26 @@
             android:name=".Hi5Activity"
             android:label="@string/title_activity_hi5"
             android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="trainedge.majorproject.HomeActivity" />
+
+        <activity
+            android:name=".BadooActivity"
+            android:label="@string/title_activity_badoo"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="trainedge.majorproject.HomeActivity" />
+
+        <activity
+            android:name=".AskfmActivity"
+            android:label="@string/title_activity_askfm"
+            android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <meta-data

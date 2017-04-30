@@ -58,6 +58,16 @@
         android:title="Hi5" />
 
         <item
+            android:id="@+id/nav_badoo"
+            android:icon="@drawable/badoo"
+            android:title="Badoo" />
+
+        <item
+            android:id="@+id/nav_askfm"
+            android:icon="@drawable/askfm50"
+            android:title="Askfm" />
+
+        <item
             android:id="@+id/btnLogout"
             android:icon="@drawable/ic_power_settings_new_black_24dp"
             android:title="Logout" />
