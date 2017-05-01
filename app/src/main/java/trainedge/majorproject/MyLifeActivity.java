@@ -5,12 +5,15 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class MyLifeActivity extends AppCompatActivity {
+
+    private WebView wvMyLife;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +24,7 @@ public class MyLifeActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        WebView wvMyLife =(WebView) findViewById(R.id.wvMyLife);
+        wvMyLife = (WebView) findViewById(R.id.wvMyLife);
         wvMyLife.getSettings().setJavaScriptEnabled(true);
         wvMyLife.setWebViewClient(new MyLifeCallback());
         wvMyLife.loadUrl("https://www.mylife.com");
