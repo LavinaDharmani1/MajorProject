@@ -28,7 +28,7 @@ public class TumblrActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        WebView wvTumblr = (WebView) findViewById(R.id.wvTumblr);
+        wvTumblr = (WebView) findViewById(R.id.wvTumblr);
         wvTumblr.getSettings().setJavaScriptEnabled(true);
         wvTumblr.loadUrl("https://www.tumblr.com");
         wvTumblr.setWebViewClient(new TumblrCallback());

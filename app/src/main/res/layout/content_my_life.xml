@@ -8,8 +8,6 @@
     tools:context="trainedge.majorproject.MyLifeActivity"
     tools:showIn="@layout/activity_my_life">
 
-
-
     <WebView
         android:id="@+id/wvMyLife"
         android:layout_width="0dp"
