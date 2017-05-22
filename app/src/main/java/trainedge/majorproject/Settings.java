@@ -8,14 +8,17 @@ import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
+import android.widget.Spinner;
+import android.widget.AdapterView;
 import android.widget.Toast;
 
 
-public class Settings extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener, TextWatcher {
+public class Settings extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener, TextWatcher, AdapterView.OnItemSelectedListener {
 
 
     private EditText etDefEmail;
@@ -23,6 +26,10 @@ public class Settings extends AppCompatActivity implements View.OnClickListener,
     private Switch switchCloudSyncOp;
     private Button btnClearSettings;
     private SharedPreferences pref;
+    private ArrayAdapter<CharSequence> adapter;
+    private ArrayAdapter<CharSequence> adapter1;
+    private Spinner spinner;
+    private Spinner spinner1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,11 +57,31 @@ public class Settings extends AppCompatActivity implements View.OnClickListener,
         switchCloudSyncOp.setOnCheckedChangeListener(this);
         etDefEmail.addTextChangedListener(this);
 
+        spinner = (Spinner) findViewById(R.id.theme);
+// Create an ArrayAdapter using the string array and a default spinner layout
+        adapter = ArrayAdapter.createFromResource(this,
+                R.array.theme, android.R.layout.simple_spinner_item);
+// Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+// Apply the adapter to the spinner
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
+
+
+
+        spinner1 = (Spinner) findViewById(R.id.quality);
+// Create an ArrayAdapter using the string array and a default spinner layout
+        adapter1 = ArrayAdapter.createFromResource(this,
+                R.array.quality, android.R.layout.simple_spinner_item);
+// Specify the layout to use when the list of choices appears
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+// Apply the adapter to the spinner
+        spinner1.setAdapter(adapter1);
+
+
         //read pref to update ui too
         updateUI();
     }
-
-
 
     @Override
     public void onClick(View v) {
@@ -117,5 +144,37 @@ public class Settings extends AppCompatActivity implements View.OnClickListener,
         switchWifiOp.setChecked(wifi_state);
         switchCloudSyncOp.setChecked(cloud_state);
         etDefEmail.setText(email);
+        spinner.setSelection(pref.getInt("themepos", 0));
+        spinner1.setSelection(pref.getInt("qualitypos", 0));
     }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        SharedPreferences.Editor edit = pref.edit();
+        switch (parent.getId()) {
+            case R.id.theme:
+                edit.putInt("themepos", position);
+                edit.putString("theme", String.valueOf(adapter.getItem(position)));
+                break;
+            case R.id.quality:
+                edit.putInt("qualitypos", position);
+                edit.putString("theme", String.valueOf(adapter.getItem(position)));
+                break;
+
+
+        }
+        edit.apply();
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+    }
+
+    //FirebaseAuth.getInstance().signOut();
+    //intent to login activity
+    //finish();
+
 }
+

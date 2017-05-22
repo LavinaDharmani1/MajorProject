@@ -40,4 +40,19 @@
     <string name="title_activity_badoo">BadooActivity</string>
     <string name="title_activity_askfm">AskfmActivity</string>
     <string name="title_activity_my_life">MyLifeActivity</string>
+    <string-array name="theme">
+        <item>Default</item>
+        <item>White</item>
+        <item>Red</item>
+        <item>Black</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Orange</item>
+    </string-array>
+
+    <string-array name="quality">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
 </resources>

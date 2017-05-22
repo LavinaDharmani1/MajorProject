@@ -1,6 +1,7 @@
 package trainedge.majorproject;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,12 +15,31 @@ import android.view.MenuItem;
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private SharedPreferences pref;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        pref = getSharedPreferences("setting_pref", MODE_PRIVATE);
+        String theme = pref.getString("theme", "Default");
+        if (theme.equals("White")) {
+            setTheme(R.style.WhiteTheme);
+        } else if (theme.equals("Red")) {
+            setTheme(R.style.RedTheme);
+        } else if (theme.equals("Black")) {
+            setTheme(R.style.BlackTheme);
+        } else if (theme.equals("Green")) {
+            setTheme(R.style.GreenTheme);
+        } else if (theme.equals("Blue")) {
+            setTheme(R.style.BlueTheme);
+        }else if (theme.equals("Orange")) {
+            setTheme(R.style.OrangeTheme);
+        }else {
+            setTheme(R.style.AppTheme_NoActionBar);
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

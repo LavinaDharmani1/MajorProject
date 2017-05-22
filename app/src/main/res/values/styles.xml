@@ -3,7 +3,7 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowBackground">@android:color/background_light</item>
@@ -14,8 +14,48 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Default" parent="AppTheme">
+        <!-- Customize your theme here. -->
 
+    </style>
+
+
+    <style name="WhiteTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#e9e9e9</item>
+        <item name="colorPrimaryDark">#fcfbfb</item>
+        <item name="colorAccent">#ffccbc</item>
+    </style>
+    <style name="RedTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#ff1744</item>
+        <item name="colorPrimaryDark">#e57373</item>
+        <item name="colorAccent">#ff8a80</item>
+    </style>
+
+
+    <style name="BlackTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#FF1E1E1E</item>
+        <item name="colorPrimaryDark">#234f22</item>
+        <item name="colorAccent">#f1f</item>
+    </style>
+
+    <style name="GreenTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#64dd17</item>
+        <item name="colorPrimaryDark">#69f0ae</item>
+        <item name="colorAccent">#69f0ae</item>
+    </style>
+
+    <style name="BlueTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#304ffe</item>
+        <item name="colorPrimaryDark">#536dfe</item>
+        <item name="colorAccent">#448aff</item>
+    </style>
+
+    <style name="OrangeTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#e64a19</item>
+        <item name="colorPrimaryDark">#ff9e80</item>
+        <item name="colorAccent">#ffa880</item>
+    </style>
 </resources>
