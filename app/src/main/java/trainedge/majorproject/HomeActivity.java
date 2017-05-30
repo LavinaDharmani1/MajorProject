@@ -19,10 +19,6 @@ public class HomeActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
         pref = getSharedPreferences("setting_pref", MODE_PRIVATE);
         String theme = pref.getString("theme", "Default");
         if (theme.equals("White")) {
@@ -40,6 +36,11 @@ public class HomeActivity extends AppCompatActivity
         }else {
             setTheme(R.style.AppTheme_NoActionBar);
         }
+        setContentView(R.layout.activity_home);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
